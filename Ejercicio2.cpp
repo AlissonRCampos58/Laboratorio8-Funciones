@@ -11,8 +11,7 @@ int main(){
     cout<<"Ingrese la temperatura: "<<endl;
     cin>>temperatura;
 
-    temperatura = celsiusAFahrenheit(temperatura);
-    cout << "La temperatura esta a "<<temperatura<<" grados Fahrenheit."<<endl;
+    cout << "La temperatura esta a "<< celsiusAFahrenheit(temperatura)<<" grados Fahrenheit."<<endl;
     
     return 0;
 }

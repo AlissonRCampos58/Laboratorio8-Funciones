@@ -15,18 +15,17 @@ float dividir(float a, float b){
     if(b!=0){
         div=a/b;
         cout<<"Resultado: "<<div<< endl;  
-        return div;     
     }else{
         cout<<"Math ERROR. El divisor no puede ser 0."<<endl;
     }
-
+    return div;     
 }
 
 int main(){
     int opcion;
-    float n1, n2, sum, rest, multi, div;
+    float n1, n2;
 
-    cout<<"---------Calculadora--------"<<endl;
+    cout<<"---------Calculadora--------"<<endl<<endl;
     cout<<"1.Suma"<<endl;
     cout<<"2.Resta"<<endl;
     cout<<"3.Multiplicacion"<<endl;
@@ -42,8 +41,7 @@ int main(){
             cin>> n1;
             cout<<"Ingresar segundo numero: ";
             cin>> n2;
-            sum=sumar(n1,n2);
-            cout<<"Resultado: "<<sum<< endl;
+            cout<<"Resultado: "<<sumar(n1,n2)<< endl;
             break;
 
         case 2:
@@ -51,9 +49,8 @@ int main(){
             cout<<"Ingresar primer numero: ";
             cin>> n1;
             cout<<"Ingresar segundo numero: ";
-            cin>> n2;
-            rest=restar(n1,n2);
-            cout<<"Resultado: "<<rest<< endl;
+            cin>> n2;        
+            cout<<"Resultado: "<<restar(n1,n2)<< endl;
             break;
             
         case 3:
@@ -62,8 +59,7 @@ int main(){
             cin>> n1;
             cout<<"Ingresar segundo numero: ";
             cin>> n2;
-            multi=multiplicar(n1,n2);
-            cout<<"Resultado: "<<multi<< endl;
+            cout<<"Resultado: "<<multiplicar(n1,n2)<< endl;
             break;
 
         case 4:
@@ -72,7 +68,7 @@ int main(){
             cin>> n1;
             cout<<"Ingresar segundo numero: ";
             cin>> n2;
-            div=dividir(n1,n2);
+            dividir(n1,n2);
             break;
 
         default:
